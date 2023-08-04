@@ -1,11 +1,11 @@
 // BusSelect.js
-import React, { useState } from 'react';
-import busData from '../busData.json';
-import './BusSelect.css'; // Import your CSS file for additional styling
+import React, { useState } from "react";
+import busData from "../busData.json";
+import "./BusSelect.css"; // Import your CSS file for additional styling
 
 const BusSelect = () => {
-  const [selectedStartLocation, setSelectedStartLocation] = useState('');
-  const [selectedEndLocation, setSelectedEndLocation] = useState('');
+  const [selectedStartLocation, setSelectedStartLocation] = useState("");
+  const [selectedEndLocation, setSelectedEndLocation] = useState("");
   const [selectedBus, setSelectedBus] = useState(null);
 
   const handleStartLocationChange = (event) => {
@@ -24,8 +24,8 @@ const BusSelect = () => {
 
   const handleBookTicket = () => {
     if (selectedBus) {
-      const whatsappLink = `https://wa.me/916265323177?text=I want to book a ticket for ${selectedBus.name}`;
-      window.open(whatsappLink, '_blank');
+      const whatsappLink = `https://api.whatsapp.com/send/?phone=+916265323177&text=I want to book a ticket for ${selectedBus.name}`;
+      window.open(whatsappLink, "_blank");
     }
   };
 
@@ -79,9 +79,15 @@ const BusSelect = () => {
           <h3>Available Buses:</h3>
           <ul className="list-group">
             {filteredBuses.map((bus) => (
-              <li key={bus.id} className="list-group-item d-flex justify-content-between align-items-center">
+              <li
+                key={bus.id}
+                className="list-group-item d-flex justify-content-between align-items-center"
+              >
                 {bus.name}
-                <button className="btn btn-primary" onClick={() => handleBusSelect(bus)}>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => handleBusSelect(bus)}
+                >
                   Select Bus
                 </button>
               </li>
