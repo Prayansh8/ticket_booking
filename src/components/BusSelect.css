@@ -1,0 +1,19 @@
+/* BusSelect.css */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .available-buses {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .selected-bus {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  

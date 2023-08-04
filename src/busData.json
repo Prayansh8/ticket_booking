@@ -1,0 +1,39 @@
+{
+    "locations": [
+        "Indore",
+        "Bhopal",
+        "Chanderi"
+    ],
+    "buses": [
+      {
+        "id": 1,
+        "name": "Bus 101",
+        "startLocation": "Indore",
+        "endLocation": "Bhopal"
+      },
+      {
+        "id": 2,
+        "name": "Bus 202",
+        "startLocation": "Bhopal",
+        "endLocation": "Chanderi"
+      },{
+        "id": 3,
+        "name": "Bus 203",
+        "startLocation": "Chanderi",
+        "endLocation": "Indore"
+      },
+      {
+        "id": 4,
+        "name": "Bus 204",
+        "startLocation": "Indore",
+        "endLocation": "Chanderi"
+      },
+      {
+        "id": 5,
+        "name": "Bus 205",
+        "startLocation": "Chanderi",
+        "endLocation": "Bhopal"
+      }
+    ]
+  }
+  
