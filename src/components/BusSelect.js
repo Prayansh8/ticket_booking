@@ -24,7 +24,7 @@ const BusSelect = () => {
 
   const handleBookTicket = () => {
     if (selectedBus) {
-      const whatsappLink = `https://wa.me/1234567890?text=I want to book a ticket for ${selectedBus.name}`;
+      const whatsappLink = `https://wa.me/916265323177?text=I want to book a ticket for ${selectedBus.name}`;
       window.open(whatsappLink, '_blank');
     }
   };
