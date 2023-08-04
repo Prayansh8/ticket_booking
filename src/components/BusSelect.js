@@ -22,9 +22,10 @@ const BusSelect = () => {
     setSelectedBus(bus);
   };
 
+
   const handleBookTicket = () => {
     if (selectedBus) {
-      const whatsappLink = `https://api.whatsapp.com/send/?phone=+916265323177&text=I want to book a ticket for ${selectedBus.name}`;
+      const whatsappLink = `https://api.whatsapp.com/send/?phone=+916265323177&text=I want to book a ticket for the ${selectedBus.name} bus departing from ${selectedStartLocation}. Please provide me with the necessary details and steps to complete the booking process. Thank you.`;
       window.open(whatsappLink, "_blank");
     }
   };
@@ -36,8 +37,8 @@ const BusSelect = () => {
   );
 
   return (
-    <div className="container bg-light p-4 rounded">
-      <h2 className="mb-4">Bus Ticket Booking</h2>
+    <div className=" bg-light p-4 rounded">
+      <h4 className="mb-4 text-muted">Bus Ticket Booking:</h4>
       <div className="mb-3">
         <label htmlFor="startLocation" className="form-label">
           Start Location:

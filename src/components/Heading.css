@@ -1,0 +1,20 @@
+.headding {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+  padding: 2vh 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.69);
+}
+
+.headdingDiv{
+    margin: 1vh 0;
+    border-bottom: 2px solid #ccc;
+    border-width: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .headding {
+    font-size: 24px;
+  }
+}

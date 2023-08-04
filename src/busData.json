@@ -33,6 +33,30 @@
         "name": "Bus 205",
         "startLocation": "Chanderi",
         "endLocation": "Bhopal"
+      },
+      {
+        "id": 6,
+        "name": "Bus 206",
+        "startLocation": "Bhopal",
+        "endLocation": "Indore"
+      },
+      {
+        "id": 7,
+        "name": "Bus 207",
+        "startLocation": "Bhopal",
+        "endLocation": "Indore"
+      },
+      {
+        "id": 8,
+        "name": "Bus 208",
+        "startLocation": "Chanderi",
+        "endLocation": "Indore"
+      },
+      {
+        "id": 9,
+        "name": "Bus 209",
+        "startLocation": "Bhopal",
+        "endLocation": "Indore"
       }
     ]
   }
